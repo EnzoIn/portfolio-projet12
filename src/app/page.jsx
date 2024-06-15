@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "./components/Section";
+import Stacks from "./components/Stacks";
 
 export default function Home() {
   return (
@@ -22,38 +23,20 @@ export default function Home() {
             technologies.
           </p>
         </section>
-        <Section id="#about" number="01" title="À propos"></Section>
-        <Section id="#projects" number="02" title="Mes projets"></Section>
-        <Section id="#about" number="01" title="Contact"></Section>
+        <Section id="about" number="01" title="À propos">
+        <div className="pt-5">
+  <p className="text-lg max-w-xl">
+    Salut ! Je suis Enzo Ingraito. Depuis mon plus jeune âge, les jeux vidéo et la technologie m'ont fasciné. Après 15 ans dans la restauration, j'ai décidé de changer de cap. J'ai toujours pensé que le monde du web et du code était hors de ma portée, mais j'ai décidé de me lancer.<br/><br/> Maintenant, je suis en plein dans cette nouvelle aventure. Chaque ligne de code que j'écris est une découverte, chaque projet une nouvelle opportunité d'apprentissage. Mon objectif ? Maîtriser le web et le développement informatique tout en trouvant un épanouissement total dans mes activités.
+  </p>
+  <h2 className="text-xl font-bold mt-5 mb-5">
+    Voici quelques technologies avec lesquelles j'ai travaillé :
+  </h2>
+  <Stacks />
+</div>
+        </Section>
+        <Section id="projects" number="02" title="Mes projets"></Section>
+        <Section id="contact" number="03" title="Contact"></Section>
       </main>
     </>
   );
-}
-
-{
-  /*<container>
-          <section id="about">
-            <h2>
-              <span>01.</span> À propos
-            </h2>
-          </section>
-
-          <section id="stacks">
-            <h2>
-              <span>02.</span> Stacks/Soft Skills
-            </h2>
-          </section>
-
-          <section id="projects">
-            <h2>
-              <span>03.</span> Mes projets
-            </h2>
-          </section>
-
-          <section id="contact">
-            <h2>
-              <span>04.</span> Contact
-            </h2>
-          </section>
-  </container>*/
 }
