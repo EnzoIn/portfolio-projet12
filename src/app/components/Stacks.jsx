@@ -16,10 +16,10 @@ const Stacks = ({ stackName }) => {
     : stacksData;
 
   return (
-    <div className="grid grid-cols-1 px-14 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 px-14 sm:grid-cols-2 md:grid-cols-3 gap-4 md:px-0">
       {filteredStacks.map((stack, index) => (
         <div key={index} className="flex items-center border border-border bg-card rounded-xl px-2 py-1">
-          <img src={stack.svg} alt={stack.name} className="w-10 h-10" />
+          <img src={stack.svg} alt={stack.name} className="size-10" />
           <h5 className="text-md font-bold text-primary ml-1">{stack.name}</h5>
         </div>
       ))}
