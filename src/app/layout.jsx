@@ -1,8 +1,8 @@
-import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
-import './globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import "./globals.css";
 
 export const metadata = {
   title: "Enzo Ingraito · Portfolio",
@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <head>
+        <link rel="icon" href="/images/favicon.webp" sizes="any" />
+      </head>
       <body>
         <Header />
         {children}

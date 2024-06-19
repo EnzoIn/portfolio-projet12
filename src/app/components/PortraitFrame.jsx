@@ -9,7 +9,7 @@ const PortraitFrame = () => {
       </div>
         <Image
           className="rounded-lg filter grayscale-[100%] group-hover:filter-none group-hover:-translate-x-2 group-hover:-translate-y-2 transition-all duration-300"
-          src="/images/photo-profil.jpg"
+          src="/images/photo-profil.webp"
           alt="Photo de profil de Enzo Ingraito"
           layout="fill"
           objectFit="cover"

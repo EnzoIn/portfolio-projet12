@@ -5,12 +5,14 @@ import Section from "./components/Section";
 import Stacks from "./components/Stacks";
 import Button from "./components/Button";
 import PortraitFrame from "./components/PortraitFrame";
+import Loader from "./components/Loader";
 
 export default function Home() {
   return (
     <>
+    <Loader />
       <main className="max-w-5xl px-4 mx-auto flex flex-col items-center justify-center gap-8 md:px-10">
-        <section className="">
+        <section>
           <h1 className="text-m font-thin mb-4 text-primary">
             Salut, je m'appelle
           </h1>

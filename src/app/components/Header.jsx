@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Button from "./Button";
+import Logo from "./Logo"
 
 const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,8 +14,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between px-4 py-6 font-thin text-sm md:px-10 lg:px-24">
-        <div className="flex items-center">LOGO</div>
+      <header className="flex justify-between px-4 py-10 font-thin text-sm md:px-10 lg:px-24">
+        <Logo />
         <nav className="hidden md:flex items-center">
           <ul className="flex mr-5">
             <li className="p-2.5 hover:text-primary">
