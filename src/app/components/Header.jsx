@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 import Button from "./Button";
-import Logo from "./Logo"
+import Logo from "./Logo";
 
 const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);

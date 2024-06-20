@@ -1,18 +1,18 @@
 "use client";
 
-import React from "react";
+import Button from "./components/Button";
+import Loader from "./components/Loader";
+import PortraitFrame from "./components/PortraitFrame";
+import Projects from "./components/Projects";
 import Section from "./components/Section";
 import Stacks from "./components/Stacks";
-import Button from "./components/Button";
-import PortraitFrame from "./components/PortraitFrame";
-import Loader from "./components/Loader";
 
 export default function Home() {
   return (
     <>
     <Loader />
       <main className="max-w-5xl px-4 mx-auto flex flex-col items-center justify-center gap-8 md:px-10">
-        <section>
+        <section className=" pb-20 pt-10">
           <h1 className="text-m font-thin mb-4 text-primary">
             Salut, je m'appelle
           </h1>
@@ -56,6 +56,7 @@ export default function Home() {
           </div>
         </Section>
         <Section id="projects" number="02" title="Mes projets"></Section>
+        <Projects />
         <Section id="contact" number="03" title="Contact">
           <div className="flex flex-col items-center text-center w-full pt-11">
             <p className=" mb-9 max-w-lg">

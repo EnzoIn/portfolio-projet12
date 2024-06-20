@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 const Button = ({ text, onClick }) => {
   return (
     <div className="bg-primary text-primary rounded inline-flex">

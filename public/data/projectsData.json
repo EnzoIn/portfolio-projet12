@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1",
+    "title": "Ohmyfood",
+    "description": "J'ai réalisé l'intégration mobile-first d'un site web pour une start-up. J'ai optimisé le CSS en utilisant Sass, et j'ai ajouté des animations CSS pour améliorer l'expérience utilisateur. Pour la gestion de version et la collaboration, j'ai utilisé Git et GitHub. Ce projet a renforcé mon profil en tant que développeur front-end compétent et polyvalent.",
+    "image": "/images/ohmyfood.webp",
+    "alt": "Image du site web Oh my food",
+    "stack": "HTML | CSS | Sass",
+    "github": "https://github.com/EnzoIn/Ohmyfood-projet4",
+    "link": "https://enzoin.github.io/Ohmyfood-projet4/"
+  },
+
+  {
+    "id": "2",
+    "title": "Sophie Bluel",
+    "description": "J'ai développé une page web dynamique pour le site d'une architecte d'intérieur en utilisant JavaScript. J'ai géré les interactions utilisateurs, manipulé les éléments du DOM et intégré une API pour la communication des données. Ce projet m'a permis de renforcer mes compétences en développement front-end et de créer un site web interactif et fonctionnel.",
+    "image": "/images/sophiebluel.webp",
+    "alt": "Image du site web de Sophie Bluel",
+    "stack": "HTML | CSS | Javascript",
+    "github": "https://github.com/EnzoIn/Portfolio-architecte-sophie-bluel-Projet6"
+  },
+
+  {
+    "id": "3",
+    "title": "Kasa",
+    "description": "J'ai développé le front-end d'une application web moderne et réactive en utilisant React et React Router. Mon travail a principalement consisté à concevoir et implémenter divers composants React pour présenter les données de manière efficace. J'ai également configuré la navigation entre les pages grâce à React Router, en utilisant des données simulées provenant d'un fichier JSON pour alimenter l'application. Ce projet m'a permis de solidifier mes compétences en développement front-end et d'approfondir ma maîtrise de React.",
+    "image": "/images/kasa.webp",
+    "alt": "Image du site web Kasa",
+    "stack": "HTML | CSS | React",
+    "github": "https://github.com/EnzoIn/kasa-projet8"
+  },
+
+  {
+    "id": "4",
+    "title": "Nina Carducci",
+    "description": "J'ai optimisé le référencement d'un site web en améliorant sa performance et son accessibilité. J'ai identifié les problèmes de chargement et de SEO, puis proposé et implémenté des recommandations pour les résoudre. J'ai apporté des modifications au code du site et créé un rapport illustrant les résultats avant et après les améliorations.",
+    "image": "/images/ninacarducci.webp",
+    "alt": "Image du site web de Nina Carducci",
+    "stack": "SEO | Performance",
+    "github": "https://github.com/EnzoIn/nina-carducci-projet9",
+    "link": "https://enzoin.github.io/nina-carducci-projet9/"
+  },
+
+  {
+    "id": "5",
+    "title": "ArgentBank",
+    "description": "J'ai développé le front-end d'une application bancaire en utilisant React, Redux et Swagger. J'ai intégré le front-end avec le back-end via des appels API, et j'ai créé un tableau de bord complet et réactif pour les utilisateurs. En gérant les données de l'application avec Redux, j'ai assuré une gestion d'état efficace et centralisée. Ce projet m'a permis de maîtriser des compétences essentielles.",
+    "image": "/images/argentbank.webp",
+    "alt": "image du site web ArgentBank",
+    "stack": "HTML | CSS | React | Redux",
+    "github": "https://github.com/EnzoIn/ArgentBank-projet11"
+  }
+]
