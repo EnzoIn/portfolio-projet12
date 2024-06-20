@@ -2,6 +2,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import SideBar from "./components/SideBar";
 import "./globals.css";
 
 export const metadata = {
@@ -16,6 +17,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/images/favicon.webp" sizes="any" />
       </head>
       <body>
+        <SideBar social={true} />
+        <SideBar />
         <Header />
         {children}
         <Footer />
