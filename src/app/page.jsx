@@ -12,11 +12,11 @@ export default function Home() {
     <>
     <Loader />
       <main className="max-w-5xl px-4 mx-auto flex flex-col items-center justify-center gap-8 md:px-10">
-        <section className=" pb-20 pt-10">
+        <section className=" pb-24 pt-20">
           <h1 className="text-m font-thin mb-4 text-primary">
             Salut, je m'appelle
           </h1>
-          <h2 className="text-5xl font-bold mb-4 text-sky-200 md:text-6xl">
+          <h2 className="text-5xl font-bold mb-5 text-sky-200 md:text-6xl">
             Enzo Ingraito.
           </h2>
           <h3 className="text-4xl font-semibold mb-5 text-sky-900 md:text-6xl md:mb-10 ">

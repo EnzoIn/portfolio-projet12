@@ -33,6 +33,7 @@ const SideBar = ({ social }) => {
                 href="https://github.com/EnzoIn"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Github"
               >
                 <GithubIcon />
               </Link>
@@ -40,6 +41,7 @@ const SideBar = ({ social }) => {
                 href="https://www.linkedin.com/in/enzo-ingraito-8694692b3"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <LinkedinIcon />
               </Link>
@@ -47,6 +49,7 @@ const SideBar = ({ social }) => {
                 href="https://www.instagram.com/enzo_in/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <InstagramIcon />
               </Link>
@@ -60,6 +63,7 @@ const SideBar = ({ social }) => {
                 href="mailto:enzo.ingraito@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Email"
               >
                 <p>enzo.ingraito@gmail.com</p>
               </Link>

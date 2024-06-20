@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between px-4 py-10 font-thin text-sm md:px-10 lg:px-24">
+      <header className="flex justify-between px-4 py-10 font-thin text-sm md:px-10 custom:px-24">
         <Logo />
         <nav className="hidden md:flex items-center">
           <ul className="flex mr-5">

@@ -45,11 +45,11 @@ const Projects = () => {
               <p className="text-muted-foreground">{project.description}</p>
               <h3 className="text-primary">{project.stack}</h3>
               <div className="flex gap-5 mr-2">
-                <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                <Link href={project.github} target="_blank" rel="noopener noreferrer" aria-label="Github">
                   <GithubIcon />
                 </Link>
                 {project.link && (
-                  <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                  <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label="Lien">
                     <LinkIcon />
                   </Link>
                 )}
@@ -95,11 +95,11 @@ const Projects = () => {
               <div className="text-primary">{project.stack}</div>
             </div>
             <div className="flex  gap-5 mr-2">
-              <Link href={project.github} target="_blank" rel="noopener noreferrer">
+              <Link href={project.github} target="_blank" rel="noopener noreferrer" aria-label="Github">
                 <GithubIcon />
               </Link>
               {project.link && (
-                <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                <Link href={project.link} target="_blank" rel="noopener noreferrer" aria-label="Lien">
                   <LinkIcon />
                 </Link>
               )}
