@@ -7,11 +7,11 @@ const PortraitFrame = () => {
       <div className="w-full h-full z-20 absolute rounded-lg top-0 left-0 bg-primary opacity-40 group-hover:opacity-0 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-all duration-300">
       </div>
         <Image
-          className="rounded-lg filter grayscale-[100%] group-hover:filter-none group-hover:-translate-x-2 group-hover:-translate-y-2 transition-all duration-300"
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-lg filter grayscale-[100%] group-hover:filter-none group-hover:-translate-x-2 group-hover:-translate-y-2 transition-all duration-300"
           src="/images/photo-profil.webp"
           alt="Photo de profil de Enzo Ingraito"
-          layout="fill"
-          objectFit="cover"
+          width={500}
+          height={500}
         />
     </div>
   );

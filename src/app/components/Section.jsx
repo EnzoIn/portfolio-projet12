@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 const Section = ({ id, number, title, children }) => {
   return (
     <section className="max-w-4xl w-full py-20 lg:px-4" id={id}>
@@ -10,4 +13,12 @@ const Section = ({ id, number, title, children }) => {
   );
 };
 
+Section.propTypes = {
+  id: PropTypes.string,
+  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
 export default Section;
+
