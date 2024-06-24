@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import projectsData from "/Users/skyfax/Desktop/portfolio-projet12/public/data/projectsData.json";
 import GithubIcon from "../../../public/icon/GithubIcon";
 import LinkIcon from "../../../public/icon/LinkIcon";
+import Stacks from "./Stacks";
 
 const Projects = () => {
   const [mobile, setMobile] = useState(false);
@@ -40,13 +41,12 @@ const Projects = () => {
               height={500}
             />
             <div className="flex flex-col items-start justify-start p-5 gap-3 bg-card border border-border z-20 opacity-85">
-              <h2 className="font-bold text-primary text-xl">
-                {project.title}
-              </h2>
+              <h2 className="font-bold text-primary text-xl">{project.title}</h2>
               <p className="text-muted-foreground">{project.description}</p>
-              <h3 className="text-primary">{project.stack}</h3>
+              <Stacks stacks={project.stacks} />
               <div className="flex gap-5 mr-2">
                 <Link
+                  className="hover:fill-primary"
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -56,6 +56,7 @@ const Projects = () => {
                 </Link>
                 {project.link && (
                   <Link
+                    className="hover:fill-primary"
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -99,14 +100,15 @@ const Projects = () => {
             }`}
           >
             <h2 className="text-2xl font-bold text-primary">{project.title}</h2>
-            <div className=" w-full h-auto border border-border rounded-lg bg-card p-6">
+            <div className="w-full h-auto border border-border rounded-lg bg-card p-6">
               <p className="text-muted-foreground">{project.description}</p>
             </div>
-            <div className="flex items-center justify-center bg-card border py-1 px-2 border-border rounded-lg">
-              <div className="text-primary">{project.stack}</div>
+            <div className="flex">
+              <Stacks stacks={project.stacks} />
             </div>
-            <div className="flex  gap-5 mr-2">
+            <div className="flex gap-5 mr-2">
               <Link
+                className="hover:fill-primary"
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -116,6 +118,7 @@ const Projects = () => {
               </Link>
               {project.link && (
                 <Link
+                  className="hover:fill-primary"
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -132,6 +135,8 @@ const Projects = () => {
   );
 };
 
+export default Projects;
+
 Projects.propTypes = {
   mobile: PropTypes.bool,
   projectsData: PropTypes.arrayOf(
@@ -139,7 +144,7 @@ Projects.propTypes = {
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      stack: PropTypes.string.isRequired,
+      stacks: PropTypes.arrayOf(PropTypes.string).isRequired,
       image: PropTypes.string.isRequired,
       alt: PropTypes.string.isRequired,
       github: PropTypes.string.isRequired,
@@ -148,4 +153,3 @@ Projects.propTypes = {
   ),
 };
 
-export default Projects;

@@ -48,7 +48,9 @@ export default function Home() {
             <h2 className="text-xl font-bold mt-5 mb-5">
               Voici quelques technologies avec lesquelles j'ai travaillé :
             </h2>
+            <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 md:px-0">
             <Stacks />
+            </div>
            </div>
             <div className="flex items-center justify-center mt-16 md:ml-12  md:items-start">
               <PortraitFrame />

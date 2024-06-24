@@ -1,8 +1,8 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
 
-const Stacks = ({ stackName }) => {
-  const stacksData = [
+const Stacks = ({ stacks }) => {
+  const allStacksData = [
     { name: "HTML/CSS", svg: "/icon/htmlcss-icon.svg" },
     { name: "SASS", svg: "/icon/sass-icon.svg" },
     { name: "Javascript", svg: "/icon/javascript-icon.svg" },
@@ -14,24 +14,22 @@ const Stacks = ({ stackName }) => {
     { name: "Redux", svg: "/icon/redux-icon.svg" }
   ];
 
-  const filteredStacks = stackName
-    ? stacksData.filter(stack => stack.name.toLowerCase() === stackName.toLowerCase())
-    : stacksData;
+  const filteredStacks = stacks
+    ? allStacksData.filter(stack => stacks.includes(stack.name))
+    : allStacksData;
 
   return (
-    <div className="grid grid-cols-1 px-14 sm:grid-cols-2 md:grid-cols-3 gap-4 md:px-0">
+    <>
       {filteredStacks.map((stack, index) => (
         <div key={index} className="flex items-center border border-border bg-card rounded-xl px-2 py-1">
-          <Image src={stack.svg} alt={stack.name} width={20} height={20} className="size-10" />
+          <Image src={stack.svg} alt={stack.name} width={20} height={20} className="size-10"/>
           <h5 className="text-md font-bold text-primary ml-1">{stack.name}</h5>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
-Stacks.propTypes = {
-  stackName: PropTypes.string,
-};
+
 
 export default Stacks;
