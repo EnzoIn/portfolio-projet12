@@ -13,16 +13,16 @@ export default function Home() {
     <Loader />
       <main className="max-w-5xl px-4 mx-auto flex flex-col items-center justify-center gap-8 md:px-10">
         <section className=" pb-24 pt-20">
-          <h1 className="text-m font-thin mb-4 text-primary">
+          <h1 className="text-m font-thin mb-4 text-primary opacity-0 translate-y-[50px] animate-intro1">
             Salut, je m'appelle
           </h1>
-          <h2 className="text-5xl font-bold mb-5 text-sky-200 md:text-6xl">
+          <h2 className="text-5xl font-bold mb-5 text-sky-200 md:text-6xl opacity-0 translate-y-[50px] animate-intro2">
             Enzo Ingraito.
           </h2>
-          <h3 className="text-4xl font-semibold mb-5 text-sky-900 md:text-6xl md:mb-10 ">
+          <h3 className="text-4xl font-semibold mb-5 text-sky-900 md:text-6xl md:mb-10 opacity-0 translate-y-[50px] animate-intro3">
             Accro aux pixels, je me passionne pour le Web.
           </h3>
-          <p className="text-lg max-w-xl">
+          <p className="text-lg max-w-xl opacity-0 translate-y-[50px] animate-intro4">
             Je suis un développeur web junior passionné par la création pour le
             web. Récemment diplômé en tant qu'intégrateur web, je suis motivé
             pour mettre en pratique mes compétences et apprendre de nouvelles

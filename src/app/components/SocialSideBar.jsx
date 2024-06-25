@@ -5,7 +5,7 @@ import LinkedinIcon from "../../../public/icon/LinkedinIcon";
 
 const SocialSideBar = () => {
   return (
-    <div className=" hidden custom:flex flex-col px-10 fixed items-center bottom-0">
+    <div className=" hidden custom:flex flex-col px-10 fixed items-center bottom-0 opacity-0 animate-sidebar">
       <div className="flex flex-col items-center justify-end gap-5 mb-5">
         <Link
           className="hover:fill-primary"

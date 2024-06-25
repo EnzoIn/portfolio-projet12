@@ -18,28 +18,30 @@ const Header = () => {
         <Logo />
         <nav className="hidden md:flex items-center">
           <ul className="flex mr-5">
-            <li className="p-2.5 hover:text-primary">
+            <li className="p-2.5 hover:text-primary opacity-0 translate-y-[-50px] animate-header1">
               <Link href="#about">
                 <span className="text-primary">01.</span> À propos
               </Link>
             </li>
-            <li className="p-2.5 hover:text-primary">
+            <li className="p-2.5 hover:text-primary opacity-0 translate-y-[-50px] animate-header2">
               <Link href="#projects">
                 <span className="text-primary">02.</span> Mes projets
               </Link>
             </li>
-            <li className="p-2.5 hover:text-primary">
+            <li className="p-2.5 hover:text-primary opacity-0 translate-y-[-50px] animate-header3">
               <Link href="#contact">
                 <span className="text-primary">03.</span> Contact
               </Link>
             </li>
           </ul>
-          <Button
-            text="CV"
-            onClick={() =>
-              (window.location.href = "/assets/cv-enzo-ingraito.pdf")
-            }
-          />
+          <div className="opacity-0 translate-y-[-50px] animate-header4">
+            <Button
+              text="CV"
+              onClick={() =>
+                (window.location.href = "/assets/cv-enzo-ingraito.pdf")
+              }
+            />
+          </div>
         </nav>
         <button
           className="md:hidden p-2.5 hover:text-primary flex flex-col items-end"

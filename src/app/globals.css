@@ -3,73 +3,216 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Animation Header */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-header1 {
+    animation: fadeInDown 0.3s forwards 3.7s;
+  }
+
+  .animate-header2 {
+    animation: fadeInDown 0.3s forwards 3.8s;
+  }
+
+  .animate-header3 {
+    animation: fadeInDown 0.3s forwards 3.9s;
+  }
+
+  .animate-header4 {
+    animation: fadeInDown 0.3s forwards 4s;
+  }
+
+  /* Animation Intro */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-intro1 {
+    animation: fadeInUp 0.3s forwards 4200ms;
+  }
+
+  .animate-intro2 {
+    animation: fadeInUp 0.3s forwards 4350ms;
+  }
+
+  .animate-intro3 {
+    animation: fadeInUp 0.3s forwards 4500ms;
+  }
+
+  .animate-intro4 {
+    animation: fadeInUp 0.3s forwards 4650ms;
+  }
+
+  /* Animation SideBar */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-sidebar {
+    animation: fadeIn 1s forwards 5s;
+  }
+
+  /* Animation Loader */
   @keyframes load1 {
-    0%{bottom:0;height:0}
-    6.944444444%{bottom:0;height:100%}
-    50%{top:0;height:100%}
-    100%{top:0;height:100%}
+    0% {
+      bottom: 0;
+      height: 0;
+    }
+    6.944444444% {
+      bottom: 0;
+      height: 100%;
+    }
+    50% {
+      top: 0;
+      height: 100%;
+    }
+    100% {
+      top: 0;
+      height: 100%;
+    }
   }
-  
+
   @keyframes load2 {
-    0%{top:0;height:0}
-    6.944444444%{top:0;height:100%}
-    50%{bottom:0;height:100%}
-    100%{bottom:0;height:100%}
+    0% {
+      top: 0;
+      height: 0;
+    }
+    6.944444444% {
+      top: 0;
+      height: 100%;
+    }
+    50% {
+      bottom: 0;
+      height: 100%;
+    }
+    100% {
+      bottom: 0;
+      height: 100%;
+    }
   }
-  
+
   @keyframes load3 {
-    0%{top:0;height:0}
-    6.944444444%{top:0;height:100%}
-    50%{bottom:0;height:100%}
-    100%{bottom:0;height:100%}
+    0% {
+      top: 0;
+      height: 0;
+    }
+    6.944444444% {
+      top: 0;
+      height: 100%;
+    }
+    50% {
+      bottom: 0;
+      height: 100%;
+    }
+    100% {
+      bottom: 0;
+      height: 100%;
+    }
   }
-  
+
   @keyframes load4 {
-    0%{top:0;height:0}
-    6.944444444%{top:0;height:100%}
-    50%{bottom:0;height:100%}
-    100%{bottom:0;height:100%}
+    0% {
+      top: 0;
+      height: 0;
+    }
+    6.944444444% {
+      top: 0;
+      height: 100%;
+    }
+    50% {
+      bottom: 0;
+      height: 100%;
+    }
+    100% {
+      bottom: 0;
+      height: 100%;
+    }
   }
-  
+
   @keyframes load5 {
-    0%{bottom:0;height:0}
-    6.944444444%{bottom:0;height:100%}
-    50%{top:0;height:100%}
-    100%{top:0;height:100%}
+    0% {
+      bottom: 0;
+      height: 0;
+    }
+    6.944444444% {
+      bottom: 0;
+      height: 100%;
+    }
+    50% {
+      top: 0;
+      height: 100%;
+    }
+    100% {
+      top: 0;
+      height: 100%;
+    }
   }
-  
+
   @keyframes load6 {
-    0%{bottom:0;height:0}
-    6.944444444%{bottom:0;height:100%}
-    50%{top:0;height:100%}
-    100%{top:0;height:100%}
+    0% {
+      bottom: 0;
+      height: 0;
+    }
+    6.944444444% {
+      bottom: 0;
+      height: 100%;
+    }
+    50% {
+      top: 0;
+      height: 100%;
+    }
+    100% {
+      top: 0;
+      height: 100%;
+    }
   }
-  .animate-loader1{
+  .animate-loader1 {
     left: 0;
     animation: load1 3.5s ease 0.4s forwards;
   }
 
-  .animate-loader2{
+  .animate-loader2 {
     right: 0;
     animation: load2 3.5s ease 0.6s forwards;
   }
 
-  .animate-loader3{
+  .animate-loader3 {
     right: 0;
     animation: load3 3.5s ease 0.8s forwards;
   }
-  
-  .animate-loader4{
+
+  .animate-loader4 {
     right: 0;
     animation: load4 3.5s ease 1s forwards;
   }
 
-  .animate-loader5{
+  .animate-loader5 {
     left: 0;
     animation: load5 3.5s ease 1.2s forwards;
   }
 
-  .animate-loader6{
+  .animate-loader6 {
     left: 0;
     animation: load6 3.5s ease 1.4s forwards;
   }
@@ -77,15 +220,15 @@
   .rotate-60 {
     transform: rotate(60deg);
   }
-  
+
   .-rotate-60 {
     transform: rotate(-60deg);
   }
 }
 
 :root {
-  --font-geist-sans: 'Geist Sans', sans-serif;
-  --font-geist-mono: 'Geist Mono', monospace;
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
   --background: 207 95% 8%;
   --foreground: 201 83% 81%;
   --muted: 207 12% 15%;

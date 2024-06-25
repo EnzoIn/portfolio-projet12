@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const MailSideBar = ({mail}) => {
   return (
-    <div className="hidden custom:flex flex-col w-5 px-10 fixed items-center bottom-0 right-0">
+    <div className="hidden custom:flex flex-col w-5 px-10 fixed items-center bottom-0 right-0 opacity-0 animate-sidebar">
             <div className="flex items-center justify-end mb-24 rotate-90 hover:text-primary">
               <Link
                 href={`mailto:${mail}`}
