@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "../globals.css";
 
-const loader = () => {
+const Loader = () => {
   const [titleVisible, setTitleVisible] = useState(false);
   const [loaderVisible, setLoaderVisible] = useState(true);
   const [containerVisible, setContainerVisible] = useState(true);
@@ -65,4 +65,4 @@ const loader = () => {
   );
 };
 
-export default loader;
+export default Loader;
