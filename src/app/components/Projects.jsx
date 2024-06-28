@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import GithubIcon from "../../../public/icon/GithubIcon";
 import LinkIcon from "../../../public/icon/LinkIcon";
 import Stacks from "./Stacks";
-import projectsData from "/Users/skyfax/Desktop/portfolio-projet12/public/data/projectsData.json";
+import projectsData from "../../../public/data/projectsData.json";
 
 const Projects = () => {
   const projectsRef = useRef([]);
