@@ -11,7 +11,8 @@ const Stacks = ({ stacks }) => {
     { name: "Node.js", svg: "/icon/nodejs-icon.svg" },
     { name: "Tailwind CSS", svg: "/icon/tailwindcss-icon.svg" },
     { name: "Swagger", svg: "/icon/swagger-icon.svg" },
-    { name: "Redux", svg: "/icon/redux-icon.svg" }
+    { name: "Redux", svg: "/icon/redux-icon.svg" },
+    { name: "SEO", svg: "/icon/seo-icon.svg" }
   ];
 
   const filteredStacks = stacks
@@ -30,6 +31,8 @@ const Stacks = ({ stacks }) => {
   );
 };
 
-
+Stacks.propTypes = {
+  stacks: PropTypes.arrayOf(PropTypes.string)
+};
 
 export default Stacks;

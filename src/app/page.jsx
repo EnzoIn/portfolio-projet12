@@ -1,13 +1,29 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Button from "./components/Button";
 import Loader from "./components/Loader";
 import PortraitFrame from "./components/PortraitFrame";
 import Projects from "./components/Projects";
 import Section from "./components/Section";
 import Stacks from "./components/Stacks";
+import ProjectsMobile from "./components/ProjectsMobile";
+
 
 export default function Home() {
+  const [mobile, setMobile] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    
+  }, []);
+
   return (
     <>
     <Loader />
@@ -58,7 +74,7 @@ export default function Home() {
           </div>
         </Section>
         <Section id="projects" number="02" title="Mes projets"></Section>
-        <Projects />
+        {mobile ? <ProjectsMobile /> : <Projects />}
         <Section id="contact" number="03" title="Contact">
           <div className="flex flex-col items-center text-center w-full pt-11">
             <p className=" mb-9 max-w-lg">

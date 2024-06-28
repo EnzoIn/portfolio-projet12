@@ -1,82 +1,44 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import projectsData from "/Users/skyfax/Desktop/portfolio-projet12/public/data/projectsData.json";
+import { useEffect, useRef } from "react";
 import GithubIcon from "../../../public/icon/GithubIcon";
 import LinkIcon from "../../../public/icon/LinkIcon";
 import Stacks from "./Stacks";
+import projectsData from "/Users/skyfax/Desktop/portfolio-projet12/public/data/projectsData.json";
 
 const Projects = () => {
-  const [mobile, setMobile] = useState(false);
+  const projectsRef = useRef([]);
 
   useEffect(() => {
-    const handleResize = () => {
-      setMobile(window.innerWidth < 768);
-    };
+    gsap.registerPlugin(ScrollTrigger);
+    projectsRef.current.forEach((project, index) => {
+      const direction = index % 2 === 0 ? 1 : -1;
 
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  if (mobile) {
-    return (
-      <>
-        {projectsData.map((project) => (
-          <article
-            key={project.id}
-            className="relative w-full h-full mb-12 sm:px-20"
-          >
-            <div className="z-0"></div>
-            <Image
-              className="absolute top-0 left-0 w-full h-full object-fill filter grayscale-[100%] sm:px-20"
-              src={project.image}
-              alt={project.alt}
-              width={500}
-              height={500}
-            />
-            <div className="flex flex-col items-start justify-start p-5 gap-3 bg-card border border-border z-20 opacity-85">
-              <h2 className="font-bold text-primary text-xl">{project.title}</h2>
-              <p className="text-muted-foreground">{project.description}</p>
-              <Stacks stacks={project.stacks} />
-              <div className="flex gap-5 mr-2">
-                <Link
-                  className="hover:fill-primary"
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Github"
-                >
-                  <GithubIcon />
-                </Link>
-                {project.link && (
-                  <Link
-                    className="hover:fill-primary"
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Lien"
-                  >
-                    <LinkIcon />
-                  </Link>
-                )}
-              </div>
-            </div>
-          </article>
-        ))}
-      </>
-    );
-  }
+      gsap.fromTo(
+        project,
+        { x: 1000 * direction, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: project,
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+  }, [projectsData]);
 
   return (
     <>
       {projectsData.map((project) => (
         <article
+          ref={(el) => projectsRef.current.push(el)}
           key={project.id}
           className={`flex items-start justify-start relative w-full h-full mb-12 ${
             project.id % 2 === 0 ? "justify-end" : "justify-start"
@@ -90,6 +52,7 @@ const Projects = () => {
               alt={project.alt}
               width={500}
               height={500}
+              priority
             />
           </div>
           <div
@@ -138,7 +101,6 @@ const Projects = () => {
 export default Projects;
 
 Projects.propTypes = {
-  mobile: PropTypes.bool,
   projectsData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -150,6 +112,5 @@ Projects.propTypes = {
       github: PropTypes.string.isRequired,
       link: PropTypes.string,
     })
-  ),
+  ).isRequired,
 };
-

@@ -33,7 +33,7 @@
     "description": "J'ai optimisé le référencement d'un site web en améliorant sa performance et son accessibilité. J'ai identifié les problèmes de chargement et de SEO, puis proposé et implémenté des recommandations pour les résoudre. J'ai apporté des modifications au code du site et créé un rapport illustrant les résultats avant et après les améliorations.",
     "image": "/images/ninacarducci.webp",
     "alt": "Image du site web de Nina Carducci",
-    "stacks": ["SEO", "Performance"],
+    "stacks": ["HTML/CSS", "SEO"],
     "github": "https://github.com/EnzoIn/nina-carducci-projet9",
     "link": "https://enzoin.github.io/nina-carducci-projet9/"
   },
