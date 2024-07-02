@@ -29,7 +29,7 @@ const Projects = () => {
             start: "top 80%",
             toggleActions: "play none none none",
           },
-        }
+        },
       );
     });
   }, []);
@@ -40,14 +40,14 @@ const Projects = () => {
         <article
           ref={(el) => projectsRef.current.push(el)}
           key={project.id}
-          className={`flex items-start justify-start relative w-full h-full mb-12 ${
+          className={`relative mb-12 flex h-full w-full items-start justify-start ${
             project.id % 2 === 0 ? "justify-end" : "justify-start"
           }`}
         >
-          <div className="w-96 h-80 group relative">
-            <div className="w-96 h-80 absolute bg-primary rounded-lg z-10 opacity-50 group-hover:bg-transparent transition-all duration-300"></div>
+          <div className="group relative h-80 w-96">
+            <div className="absolute z-10 h-80 w-96 rounded-lg bg-primary opacity-50 transition-all duration-300 group-hover:bg-transparent"></div>
             <Image
-              className="absolute top-0 left-0 w-full h-full object-fill rounded-lg filter grayscale-[100%] group-hover:filter-none transition-all duration-300"
+              className="absolute left-0 top-0 h-full w-full rounded-lg object-fill grayscale-[100%] filter transition-all duration-300 group-hover:filter-none"
               src={project.image}
               alt={project.alt}
               width={500}
@@ -56,20 +56,20 @@ const Projects = () => {
             />
           </div>
           <div
-            className={`flex flex-col z-30 top-0 gap-2.5 absolute ${
+            className={`absolute top-0 z-30 flex flex-col gap-2.5 ${
               project.id % 2 === 0
-                ? "items-start right-[20rem]"
-                : "items-end left-[20rem]"
+                ? "right-[20rem] items-start"
+                : "left-[20rem] items-end"
             }`}
           >
             <h2 className="text-2xl font-bold text-primary">{project.title}</h2>
-            <div className="w-full h-auto border border-border rounded-lg bg-card p-6">
+            <div className="h-auto w-full rounded-lg border border-border bg-card p-6">
               <p className="text-muted-foreground">{project.description}</p>
             </div>
             <div className="flex">
               <Stacks stacks={project.stacks} />
             </div>
-            <div className="flex gap-5 mr-2">
+            <div className="mr-2 flex gap-5">
               <Link
                 className="hover:fill-primary"
                 href={project.github}
@@ -111,6 +111,6 @@ Projects.propTypes = {
       alt: PropTypes.string.isRequired,
       github: PropTypes.string.isRequired,
       link: PropTypes.string,
-    })
+    }),
   ).isRequired,
 };

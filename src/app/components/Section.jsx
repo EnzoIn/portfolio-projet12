@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Section = ({ id, number, title, children }) => {
   const sectionRef = useRef(null);
@@ -19,18 +19,25 @@ const Section = ({ id, number, title, children }) => {
         duration: 1,
         scrollTrigger: {
           trigger: element,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
+          start: "top 80%",
+          toggleActions: "play none none none",
         },
-      }
+      },
     );
   }, []);
 
   return (
-    <section ref={sectionRef} className="max-w-4xl w-full py-20 lg:px-4" id={id}>
-      <h4 className="flex items-center font- text-xl md:text-2xl">
-        <span className="text-primary font-thin md:text-2xl mr-2">{number}.</span> {title}
-        <span className="h-px flex-grow rounded bg-muted-foreground ml-4 md:max-w-80"></span>
+    <section
+      ref={sectionRef}
+      className="w-full max-w-4xl py-20 lg:px-4"
+      id={id}
+    >
+      <h4 className="flex items-center text-xl md:text-2xl">
+        <span className="mr-2 font-thin text-primary md:text-2xl">
+          {number}.
+        </span>{" "}
+        {title}
+        <span className="ml-4 h-px flex-grow rounded bg-muted-foreground md:max-w-80"></span>
       </h4>
       {children}
     </section>

@@ -12,19 +12,28 @@ const Stacks = ({ stacks }) => {
     { name: "Tailwind CSS", svg: "/icon/tailwindcss-icon.svg" },
     { name: "Swagger", svg: "/icon/swagger-icon.svg" },
     { name: "Redux", svg: "/icon/redux-icon.svg" },
-    { name: "SEO", svg: "/icon/seo-icon.svg" }
+    { name: "SEO", svg: "/icon/seo-icon.svg" },
   ];
 
   const filteredStacks = stacks
-    ? allStacksData.filter(stack => stacks.includes(stack.name))
+    ? allStacksData.filter((stack) => stacks.includes(stack.name))
     : allStacksData;
 
   return (
     <>
       {filteredStacks.map((stack, index) => (
-        <div key={index} className="flex items-center border border-border bg-card rounded-xl px-2 py-1">
-          <Image src={stack.svg} alt={stack.name} width={20} height={20} className="size-10"/>
-          <h5 className="text-md font-bold text-primary ml-1">{stack.name}</h5>
+        <div
+          key={index}
+          className="flex items-center rounded-xl border border-border bg-card px-2 py-1"
+        >
+          <Image
+            src={stack.svg}
+            alt={stack.name}
+            width={20}
+            height={20}
+            className="size-10"
+          />
+          <h5 className="text-md ml-1 font-bold text-primary">{stack.name}</h5>
         </div>
       ))}
     </>
@@ -32,7 +41,7 @@ const Stacks = ({ stacks }) => {
 };
 
 Stacks.propTypes = {
-  stacks: PropTypes.arrayOf(PropTypes.string)
+  stacks: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Stacks;

@@ -1,13 +1,13 @@
 "use client";
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Button = ({ text, onClick }) => {
   return (
-    <div className="bg-primary text-primary rounded inline-flex">
+    <div className="inline-flex rounded bg-primary text-primary">
       <button
-        className="px-4 py-2 border border-primary bg-background text-primary rounded transition-transform duration-400 ease-in-out transform hover:-translate-x-1 hover:-translate-y-1"
+        className="duration-400 transform rounded border border-primary bg-background px-4 py-2 text-primary transition-transform ease-in-out hover:-translate-x-1 hover:-translate-y-1"
         onClick={onClick}
       >
         {text}

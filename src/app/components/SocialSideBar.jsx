@@ -5,8 +5,8 @@ import LinkedinIcon from "../../../public/icon/LinkedinIcon";
 
 const SocialSideBar = () => {
   return (
-    <div className=" hidden custom:flex flex-col px-10 fixed items-center bottom-0 opacity-0 animate-sidebar">
-      <div className="flex flex-col items-center justify-end gap-5 mb-5">
+    <div className="animate-sidebar fixed bottom-0 hidden flex-col items-center px-10 opacity-0 custom:flex">
+      <div className="mb-5 flex flex-col items-center justify-end gap-5">
         <Link
           className="hover:fill-primary"
           href="https://github.com/EnzoIn"

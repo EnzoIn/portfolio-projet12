@@ -5,8 +5,8 @@ import GithubIcon from "../../../public/icon/GithubIcon";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center pt-20 pb-10">
-      <div className="flex gap-9 mb-5 custom:hidden">
+    <footer className="flex flex-col items-center pb-10 pt-20">
+      <div className="mb-5 flex gap-9 custom:hidden">
         <Link
           className="hover:fill-primary"
           href="https://github.com/EnzoIn"
@@ -32,7 +32,7 @@ const Footer = () => {
           <InstagramIcon />{" "}
         </Link>
       </div>
-      <h4 className=" font-thin text-primary text-sm">
+      <h4 className="text-sm font-thin text-primary">
         © 2024 - Enzo Ingraito
       </h4>
     </footer>

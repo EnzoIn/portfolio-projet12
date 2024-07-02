@@ -26,38 +26,38 @@ const Loader = () => {
       }`}
     >
       <div
-        className={`flex justify-center items-center h-screen transition-all duration-500  ${
-          containerVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
+        className={`flex h-screen items-center justify-center transition-all duration-500 ${
+          containerVisible ? "scale-100 opacity-100" : "scale-0 opacity-0"
         }`}
       >
         <div
-          className={`text-primary font-bold text-4xl ${
+          className={`text-4xl font-bold text-primary ${
             titleVisible
-              ? "opacity-100 scale-100 transition-opacity duration-400"
-              : "opacity-0 scale-0 transition-opacity duration-400"
+              ? "duration-400 scale-100 opacity-100 transition-opacity"
+              : "duration-400 scale-0 opacity-0 transition-opacity"
           }`}
         >
           E
         </div>
 
-        <div className=" absolute w-[90px] h-[51px] ">
-          <div className="w-full h-full relative">
-            <span className="absolute left-0 w-[6px] bg-primary animate-loader6"></span>
-            <span className="absolute right-0 w-[6px] bg-primary animate-loader3"></span>
+        <div className="absolute h-[51px] w-[90px]">
+          <div className="relative h-full w-full">
+            <span className="animate-loader6 absolute left-0 w-[6px] bg-primary"></span>
+            <span className="animate-loader3 absolute right-0 w-[6px] bg-primary"></span>
           </div>
         </div>
 
-        <div className=" absolute w-[90px] h-[51px] transform rotate-60">
-          <div className="w-full h-full relative">
-            <span className="absolute left-0 w-[6px] bg-primary animate-loader1"></span>
-            <span className="absolute right-0 w-[6px] bg-primary animate-loader4"></span>
+        <div className="rotate-60 absolute h-[51px] w-[90px] transform">
+          <div className="relative h-full w-full">
+            <span className="animate-loader1 absolute left-0 w-[6px] bg-primary"></span>
+            <span className="animate-loader4 absolute right-0 w-[6px] bg-primary"></span>
           </div>
         </div>
 
-        <div className=" absolute w-[90px] h-[51px]">
-          <div className=" w-full h-full relative transform -rotate-60">
-            <span className="absolute left-0 w-[6px] bg-primary animate-loader5"></span>
-            <span className="absolute right-0 w-[6px] bg-primary animate-loader2"></span>
+        <div className="absolute h-[51px] w-[90px]">
+          <div className="-rotate-60 relative h-full w-full transform">
+            <span className="animate-loader5 absolute left-0 w-[6px] bg-primary"></span>
+            <span className="animate-loader2 absolute right-0 w-[6px] bg-primary"></span>
           </div>
         </div>
       </div>

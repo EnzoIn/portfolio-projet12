@@ -1,27 +1,26 @@
-
 const Logo = () => {
   return (
-    <div className="flex justify-center group items-center ml-5 relative">
-      <div className="text-primary font-bold text-xl">E</div>
+    <div className="group relative ml-5 flex items-center justify-center">
+      <div className="text-xl font-bold text-primary">E</div>
 
-      <div className=" absolute w-[50px] h-[28px] ">
-        <div className="w-full h-full relative">
-          <span className="absolute left-0 w-1 bg-primary h-full"></span>
-          <span className="absolute right-0 w-1 bg-primary h-full"></span>
+      <div className="absolute h-[28px] w-[50px]">
+        <div className="relative h-full w-full">
+          <span className="absolute left-0 h-full w-1 bg-primary"></span>
+          <span className="absolute right-0 h-full w-1 bg-primary"></span>
         </div>
       </div>
 
-      <div className=" absolute w-[50px] h-[28px] transform rotate-60">
-        <div className="w-full h-full relative">
-          <span className="absolute left-0 w-1 bg-primary h-full"></span>
-          <span className="absolute right-0 w-1 bg-primary h-full"></span>
+      <div className="rotate-60 absolute h-[28px] w-[50px] transform">
+        <div className="relative h-full w-full">
+          <span className="absolute left-0 h-full w-1 bg-primary"></span>
+          <span className="absolute right-0 h-full w-1 bg-primary"></span>
         </div>
       </div>
 
-      <div className=" absolute w-[50px] h-[28px]">
-        <div className=" w-full h-full relative transform -rotate-60">
-          <span className="absolute left-0 w-1 bg-primary h-full"></span>
-          <span className="absolute right-0 w-1 bg-primary h-full"></span>
+      <div className="absolute h-[28px] w-[50px]">
+        <div className="-rotate-60 relative h-full w-full transform">
+          <span className="absolute left-0 h-full w-1 bg-primary"></span>
+          <span className="absolute right-0 h-full w-1 bg-primary"></span>
         </div>
       </div>
     </div>
