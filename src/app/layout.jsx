@@ -9,24 +9,24 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Enzo Ingraito",
-    url: "https://www.votre-site.com",
-    description:
-      "Développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies.",
-    serviceType: "Développement Web",
-    address: {
+    "@type": "Service",
+    "name": "Enzo Ingraito",
+    "url": "https://portfolio-enzo-ingraito.vercel.app/",
+    "description": "Développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies.",
+    "serviceType": "Développement Web",
+    "address": {
       "@type": "PostalAddress",
-      addressLocality: "Auray",
-      postalCode: "56400",
-      addressCountry: "FR",
+      "addressLocality": "Auray",
+      "postalCode": "56400",
+      "addressCountry": "FR",
     },
-    sameAs: [
+    "sameAs": [
       "https://github.com/EnzoIn",
       "https://www.linkedin.com/in/enzo-ingraito-8694692b3",
       "https://www.instagram.com/enzo_in/",
     ],
   };
+
 
   return (
     <html
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           content="Enzo Ingraito, développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.votre-site.com" />
+        <meta property="og:url" content="https://portfolio-enzo-ingraito.vercel.app/" />
         <meta property="og:image" content="/images/favicon.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Enzo Ingraito · Portfolio" />
