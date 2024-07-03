@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
 
         <link rel="icon" href="/images/favicon.webp" sizes="any" />
       </head>
-      <body>
+      <body className="box-content overflow-x-hidden">
         <SocialSideBar />
         <MailSideBar mail="enzo.ingraito@gmail.com" />
         <Header />

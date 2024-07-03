@@ -86,7 +86,9 @@ export default function Home() {
             </p>
             <Button
               text="Contactez moi !"
-              onClick={() => (window.location.href = "enzo.ingraito@gmail.com")}
+              onClick={() =>
+                (window.location.href = "mailto:enzo.ingraito@gmail.com")
+              }
             />
           </div>
         </Section>
