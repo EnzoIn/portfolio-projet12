@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           content="Enzo Ingraito, développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.enzoin.com" />
+        <meta property="og:url" content="https://www.enzoin.fr" />
         <meta property="og:image" content="/images/photo-profil.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Enzo Ingraito · Portfolio" />
@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
           content="Enzo Ingraito, développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies."
         />
         <meta name="twitter:image" content="/images/photo-profil.jpg" />
+        <meta property="og:site_name" content="https://www.enzoin.fr"></meta>
 
         <script
         type="application/ld+json"
