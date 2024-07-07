@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Enzo Ingraito",
-    "url": "https://portfolio-enzo-ingraito.vercel.app/",
+    "url": "https://www.enzoin.com",
     "description": "Développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies.",
     "serviceType": "Développement Web",
     "address": {
@@ -50,15 +50,15 @@ export default function RootLayout({ children }) {
           content="Enzo Ingraito, développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://portfolio-enzo-ingraito.vercel.app/" />
-        <meta property="og:image" content="/images/favicon.webp" />
+        <meta property="og:url" content="https://www.enzoin.com" />
+        <meta property="og:image" content="/images/photo-profil.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Enzo Ingraito · Portfolio" />
         <meta
           name="twitter:description"
           content="Enzo Ingraito, développeur web junior passionné par la création pour le web, récemment diplômé en intégration web, avide d'apprendre et de maîtriser de nouvelles technologies."
         />
-        <meta name="twitter:image" content="/images/favicon.webp" />
+        <meta name="twitter:image" content="/images/photo-profil.jpg" />
 
         <script
         type="application/ld+json"
