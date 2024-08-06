@@ -47,7 +47,7 @@ export default function Home() {
           <div className="pt-5 md:flex">
             <div>
               <p className="max-w-xl text-lg">
-                Salut ! Je suis Enzo Ingraito. Depuis mon plus jeune âge, les
+                Je suis Enzo Ingraito. Depuis mon plus jeune âge, les
                 jeux vidéo et la technologie m&apos;ont fasciné. Après 15 ans
                 dans la restauration, j&apos;ai décidé de changer de cap.
                 J&apos;ai toujours pensé que le monde du web et du code était

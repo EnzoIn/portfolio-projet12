@@ -40,7 +40,7 @@ const Projects = () => {
         <article
           ref={(el) => projectsRef.current.push(el)}
           key={project.id}
-          className={`relative mb-12 flex h-full w-full items-start justify-start ${
+          className={`relative sm:mb-40 lg:mb-12 flex h-full w-full items-start justify-start ${
             project.id % 2 === 0 ? "justify-end" : "justify-start"
           }`}
         >
